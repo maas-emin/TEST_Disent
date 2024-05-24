@@ -11,8 +11,6 @@ import { Details } from './pages/Details'
 import { NotFound } from './pages/NotFound'
 
 import './App.css'
-import { List } from './components/List'
-import { Card } from './components/Card'
 
 function App() {
   const dispatch = useDispatch()
