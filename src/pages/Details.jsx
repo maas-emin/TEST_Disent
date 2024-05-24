@@ -8,10 +8,11 @@ import { Info } from '../components/Info'
 import { getCountry } from '../redux/slice/countrySlice'
 
 export const Details = () => {
+  const { name } = useParams()
+
   const navigate = useNavigate()
   const dispatch = useDispatch()
 
-  const { name } = useParams()
   const { country, status } = useSelector((state) => state.country)
   const { borderCountries } = useSelector((state) => state.countries)
 
